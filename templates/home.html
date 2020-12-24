@@ -3,11 +3,12 @@
 {% block content %}
   {% for post in object_list %}
    <div class="post-entry">
-     <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-     <small>By:
-         {{post.first_name }} -
+     <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }} (Industry:{{ post.genre}})</a></h2>
+     <small>
+
+  <br>By:{{post.first_name }}
          {{post.last_name}}
-         {{ post.post_date}}
+Date Posted:{{ post.post_date}}
      <p>{{ post.body }}</p>
 </div>
 

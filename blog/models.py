@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime, date
+from multiselectfield import MultiSelectField
 
 class Post(models.Model):
     SUBJECT_CHOICES = (
@@ -8,7 +9,7 @@ class Post(models.Model):
         ('cons', 'Consumer'),
         ('cyber', 'Cybersecurity'),
     )
-    genre = models.CharField(max_length=25, choices=SUBJECT_CHOICES, default='DEFAULT VALUE')
+    genre = MultiSelectField(choices=SUBJECT_CHOICES, default='DEFAULT VALUE')
 
     title = models.CharField(max_length=50)
     first_name = models.CharField(max_length=30, default='DEFAULT VALUE')
