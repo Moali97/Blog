@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  {% for post in object_list %}
-   <div class="post-entry">
-     <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }} (Industry:{{ post.genre}})</a></h2>
-     <small>
+ {% for post in object_list %}
+<div class="post-entry">
+<h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }} (Industry:{{ post.genre}})</a></h2>
+<small>
 
   <br>By:{{post.first_name }}
          {{post.last_name}}
@@ -14,4 +14,8 @@ Date Posted:{{ post.post_date}}
 
 
    {% endfor %}
+</ul>
+ <body style="background-color:gray;">
+
+
 {% endblock content %}
