@@ -1,6 +1,8 @@
 from django.db import models
 from datetime import datetime, date
 from multiselectfield import MultiSelectField
+from django.urls import reverse
+
 
 class Post(models.Model):
     SUBJECT_CHOICES = (
@@ -18,7 +20,8 @@ class Post(models.Model):
     post_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.title
+        return f"{self.body[:50]}..."
+
 
 class Entry(models.Model):
     """Something specific learned about a topic."""
@@ -32,3 +35,7 @@ class Entry(models.Model):
     def __str__(self):
         """Return a string representation of the model."""
         return f"{self.text[:50]}..."
+
+
+def get_absolute_url(self):
+    return reverse('post_detail', args=[str(self.id)])
