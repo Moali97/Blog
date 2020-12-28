@@ -22,6 +22,9 @@ class Post(models.Model):
     def __str__(self):
         return f"{self.body[:50]}..."
 
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[str(self.id)])
+
 
 class Entry(models.Model):
     """Something specific learned about a topic."""
@@ -35,7 +38,3 @@ class Entry(models.Model):
     def __str__(self):
         """Return a string representation of the model."""
         return f"{self.text[:50]}..."
-
-
-def get_absolute_url(self):
-    return reverse('post_detail', args=[str(self.id)])

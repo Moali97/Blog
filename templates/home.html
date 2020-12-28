@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
- {% for post in object_list %}
+{% for post in object_list %}
 <div class="post-entry">
 <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }} (Industry:{{ post.genre}})</a></h2>
-<small>
+<big/>
 
   <br>By:{{post.first_name }}
          {{post.last_name}}
 Date Posted:{{ post.post_date}}
      <p>{{ post.body }}</p>
-</div>
+<div/>
 
 
    {% endfor %}
-</ul>
+</div>
  <body style="background-color:gray;">
 
 
