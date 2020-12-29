@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'multiselectfield',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
