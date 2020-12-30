@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime, date
 from multiselectfield import MultiSelectField
 from django.urls import reverse
+from django.forms import Textarea
 
 
 class Post(models.Model):
@@ -34,6 +35,7 @@ class Entry(models.Model):
 
     class Meta:
         verbose_name_plural = 'entries'
+
 
     def __str__(self):
         """Return a string representation of the model."""
