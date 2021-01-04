@@ -5,16 +5,14 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class BlogListView(LoginRequiredMixin, ListView):
+class BlogListView(ListView):
     model = Post
     template_name = 'home.html'
-    login_url = 'login'
 
 
-class BlogDetailView(LoginRequiredMixin, DetailView):
+class BlogDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
-    login_url = 'login'
 
 
 class BlogCreateView(LoginRequiredMixin, CreateView):

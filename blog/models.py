@@ -13,7 +13,6 @@ class Post(models.Model):
         ('cyber', 'Cybersecurity'),
     )
     genre = MultiSelectField(choices=SUBJECT_CHOICES, default='DEFAULT VALUE')
-
     title = models.CharField(max_length=50)
     first_name = models.CharField(max_length=30, default='DEFAULT VALUE')
     last_name = models.CharField(max_length=30, default='DEFAULT VALUE')
