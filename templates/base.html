@@ -1,17 +1,15 @@
 {% load static %}
-
+<html>
   <h1>
-      <form ALIGN='center'> Blog<a href="{% url 'home' %}"></a>
+      <form ALIGN='center'>
+      <a href="{% url 'home' %}">
+         Main Blog
+      </a>
+          <a href="{% url 'home' %}"></a>
     </form>
   </h1>
 
 
-
-
-
-<html>
-  <head>
-    <title>Django blog</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
     rel="stylesheet">
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
@@ -20,28 +18,27 @@
       <div>
        <header>
 
-          <div class="nav-left">
-            <h1><a href="{% url 'home' %}">&nbsp Django blog</a></h1>
-          </div>
+
 
           <div class="nav-right">
             <a href="{% url 'post_new' %}">+ New Blog Post</a>
+          </div>
 
-          <div class="nav-right">
+          <nav>
             <a href="{% url 'login' %}">Log In</a>
-          </div>
+          </nav>
 
-          <div class="nav-right">
+          <nav>
             <a href="{% url 'signup' %}">&nbsp sign-up</a>
-          </div>
+          </nav>
        </header>
 
      {% if user.is_authenticated %}
          <p>Hi {{ user.username }}! you are logged in</p>
          <p><a href="{% url 'logout' %}">Log out</a></p>
      {% else %}
-         <p>You are not Logged in.
-            Please Log in or Signup</p>
+          <p>You are not Logged in.</p>
+            <p>Please Log in or Signup</p>
          {% endif %}
 
 
