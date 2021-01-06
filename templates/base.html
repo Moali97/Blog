@@ -1,7 +1,7 @@
 {% load static %}
 <html>
   <h1>
-      <form ALIGN='center'>
+    <form ALIGN='center'>
       <a href="{% url 'home' %}">
          Main Blog
       </a>
@@ -12,23 +12,23 @@
 
 
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
-   </head>
 
 
 
 
-          <div class="nav-right">
+
+          <nav class="nav-right">
             <a href="{% url 'post_new' %}">+ New Blog Post</a>
-          </div>
+          </nav>
 
           <nav>
             <a href="{% url 'login' %}">Log In</a>
           </nav>
 
-          <nav>
-            <a href="{% url 'signup' %}">&nbsp sign-up</a>
-          </nav>
-       </header>
+      <nav>
+       <a href="{% url 'signup' %}">&nbsp sign-up</a>
+      </nav>
+
 
      {% if user.is_authenticated %}
          <p>Hi {{ user.username }}! you are logged in</p>
@@ -42,7 +42,6 @@
 
     {% block content %}
     {% endblock content %}
-  </div>
    </body>
  </html>
 

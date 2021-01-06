@@ -2,15 +2,16 @@
 
 {% block content %}
 {% for post in object_list %}
-<div class="post-entry">
-<h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }} (Industry:{{ post.genre}})</a></h2>
-<big/>
+<div
+    class="post-entry">
+    <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</h3></a>
+    <h4>(Industry:{{ post.genre}})</h4>
 
-  <br>By:{{post.first_name }}
-         {{post.last_name}}
-Date Posted:{{ post.post_date}}
-     <p>{{ post.body }}</p>
-<div/>
+    By:{{post.first_name }}
+    {{post.last_name}}
+    <br>Date Posted:{{ post.post_date}}
+    <p>{{ post.body }}</p>
+
 
 
    {% endfor %}
