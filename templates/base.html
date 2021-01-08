@@ -16,18 +16,15 @@
 
 
 
+   <div>
+      <ul>
+       <nav class="nav-right">
+         <a href="{% url 'post_new' %}">+ New Blog Post</a>
 
-          <nav class="nav-right">
-            <a href="{% url 'post_new' %}">+ New Blog Post</a>
-          </nav>
-
-          <nav>
-            <a href="{% url 'login' %}">Log In</a>
-          </nav>
-
-      <nav>
-       <a href="{% url 'signup' %}">&nbsp sign-up</a>
+        &nbsp <a href="{% url 'login' %}">Log In</a>
+        <a href="{% url 'signup' %}">&nbspsign-up</a>
       </nav>
+   </div>
 
 
      {% if user.is_authenticated %}
@@ -37,6 +34,7 @@
           <p>You are not Logged in.</p>
             <p>Please Log in or Signup</p>
          {% endif %}
+
 
 
 
