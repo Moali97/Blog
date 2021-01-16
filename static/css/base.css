@@ -1,12 +1,13 @@
-h1 a {
- color: black;
+
+header {
+  background: #D2691E;
 }
 
-h2 a {
- color: black;
+.post-entry {
+color: black;
 }
 
-h3 a {
- color: khaki;
-}
+
+
+
 
