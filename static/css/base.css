@@ -3,11 +3,27 @@ header {
   background: #D2691E;
 }
 
-.post-entry {
-color: black;
+
+.blog-title{
+ color: #000000;
 }
 
 
+.post-extra {
+ color: #7FFFD4;
+
+}
+
+
+.post-body{
+ color: #DEB887;
+ background: ;
+}
+
+.nav-right a{
+ width:-100;
+ color:black;
+}
 
 
 

@@ -6,8 +6,9 @@
 <html>
   <header>
     <form ALIGN='center'>
-      <a href="{% url 'home' %}">
-         <font size = "6">Main Blog</font><br />
+      <a class="blog-title"
+         href="{% url 'home' %}">
+         <font size = "6">Blog</font><br />
       </a>
 
     </form>
@@ -20,11 +21,10 @@
 
 
 
-   <div>
+   <div class="nav-right">
       <ul>
-       <nav class="nav-right">
+       <nav>
          <a href="{% url 'post_new' %}">+ New Blog Post</a>
-
         &nbsp <a href="{% url 'login' %}">Log In</a>
         <a href="{% url 'signup' %}">&nbspSign-up</a>
       </nav>
