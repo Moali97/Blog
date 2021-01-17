@@ -1,6 +1,7 @@
 
 header {
   background: #D2691E;
+  text-decoration: none;
 }
 
 
@@ -9,24 +10,27 @@ header {
 }
 
 
-.post-extra {
- color: #7FFFD4;
-
+.post-title, h4, h3 a{
+ color: #FFFFFF;
+ background: #000000;
+ border: ;
 }
-
 
 .post-body{
- color: #DEB887;
- background: ;
+ color: #FFFFFF;
 }
+
 
 .nav-right a{
- color:black;
- background:#B8860B;
+background: #B22222;
+ color:#F5FFFA;
  text-decoration: none;
- padding: 5px;
-
+ padding: 10px;
+ border-radius: 100px;
 }
 
+.instruction p{
+color: #DC143C;
+}
 
 
