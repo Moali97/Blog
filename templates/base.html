@@ -15,18 +15,12 @@
   </header>
 
 
-
-
-
-
-
-
    <div class="nav-right">
       <ul>
        <nav>
         <a href="{% url 'post_new' %}">Post New Blog</a>
-        &nbsp <a href="{% url 'login' %}">Log In</a>
-        <a href="{% url 'signup' %}">&nbspSign-up</a>
+        <a href="{% url 'login' %}">Log In</a>
+        <a href="{% url 'signup' %}">Sign-up</a>
       </nav>
       </ul>
    </div>
@@ -36,8 +30,8 @@
          <p>Hi {{ user.username }}! you are logged in</p>
          <p><a href="{% url 'logout' %}">Log out</a></p>
      {% else %}
-          <p class="info">You are not Logged in!.</p>
-          <p class="info">Please Log in or Signup!</p>
+         <p class="info">You are not Logged in!.</p>
+         <p class="info">Please Log in or Signup!</p>
          {% endif %}
 </div>
 

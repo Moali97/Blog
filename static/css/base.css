@@ -29,10 +29,10 @@ background: #B22222;
  color:#F5FFFA;
  text-decoration: none;
  float: right;
- padding: 15px;
- border-radius: 100px;
+ padding: 5px;
+ border-radius: 5px;
  display: block;
- border-right:solid 50px;
+ border-right:solid 5px;
 }
 
 .info{
