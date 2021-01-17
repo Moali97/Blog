@@ -21,8 +21,11 @@ header {
 }
 
 .nav-right a{
- width:-100;
  color:black;
+ background:#B8860B;
+ text-decoration: none;
+ padding: 5px;
+
 }
 
 
