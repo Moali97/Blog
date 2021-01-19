@@ -2,6 +2,7 @@
 header {
   background: #D2691E;
   text-decoration: none;
+
 }
 
 
@@ -40,7 +41,7 @@ header {
 .info{
  color: #DC143C;
  width:250px;
- margin:0 auto;
+ margin:5 auto;
 }
 
 
