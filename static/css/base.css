@@ -23,7 +23,7 @@ header {
  background: #000000;
 }
 
-
+/* sign-up/login Navigation */
 .nav-right a{
  background: #B22222;
  color:#F5FFFA;
@@ -33,10 +33,14 @@ header {
  border-radius: 5px;
  display: block;
  border-right:solid 5px;
+ margin:5px;
 }
 
+/*authentication info */
 .info{
-color: #DC143C;
+ color: #DC143C;
+ width:250px;
+ margin:0 auto;
 }
 
 
