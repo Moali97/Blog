@@ -4,19 +4,21 @@
 {% for post in object_list %}
 
 
-<div class=post-title">
+<div class="whole-body">
+
+ <div class=post-title">
 
     <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }} </a></h3>
     <h4>(Industry:{{ post.genre}})</h4>
-</div>
+ </div>
 
-<div class="post-body ">
+ <div class="post-body ">
     By:{{post.first_name }}
     {{post.last_name}}
     <br>Date Posted:{{ post.post_date}}
     <p>{{ post.body }}</p>
+ </div>
 </div>
-
 
    {% endfor %}
 
