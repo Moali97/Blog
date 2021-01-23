@@ -1,6 +1,6 @@
 header{
  background: #000000;
- text-decoration: none;
+
  height:95px;
 }
 
@@ -12,6 +12,7 @@ body{
 
 .blog-title{
  color: #FFFFFF;
+ text-decoration: none;
 }
 
 /* Blog description */
