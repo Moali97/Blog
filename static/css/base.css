@@ -16,10 +16,9 @@ body{
 
 /* Blog description */
 .post-title, h4, h3 a{
- color: ;
+ color: #000000;
  background: #FFFFFF;
  font-size: 22px;
-
 }
 
 .blog-body{
