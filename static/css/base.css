@@ -17,7 +17,7 @@ body{
 /* Blog description */
 .post-title, h4, h3 a{
  color: #000000;
- background: #FFFFFF;
+ background:#FFE4C4;
  font-size: 22px;
 }
 
@@ -33,10 +33,13 @@ body{
  color: #000000;
  background: #FFFFFF;
  height: 200px;
+ background:#FFE4C4;
+
 }
 .post-body p{
  font-size: 19px;
  font-color: #000000;
+ background:#FFE4C4;
 }
 
 /* sign-up/login Navigation */
