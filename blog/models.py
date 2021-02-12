@@ -14,8 +14,8 @@ class Post(models.Model):
     )
     genre = MultiSelectField(choices=SUBJECT_CHOICES, default='DEFAULT VALUE')
     title = models.CharField(max_length=50)
-    first_name = models.CharField(max_length=30, default='DEFAULT VALUE')
-    last_name = models.CharField(max_length=30, default='DEFAULT VALUE')
+    first_name = models.CharField(max_length=30, default='')
+    last_name = models.CharField(max_length=30, default='')
     body = models.TextField()
     post_date = models.DateField(auto_now_add=True)  # self
 
