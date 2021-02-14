@@ -41,6 +41,13 @@ body{
  font-color: #000000;
  background:#FFE4C4;
 }
+.post-entry{
+ text-align: center
+}
+edit{
+
+}
+
 
 /* sign-up/login Navigation */
 .nav-right a{
