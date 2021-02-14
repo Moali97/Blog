@@ -7,8 +7,8 @@
   <font size="3"> <p>{{ post.body }}</p></font>
 </div>
 
-
-    <a href="{% url 'post_edit' post.pk %}">Edit Blog Post</a>
-    <p><a href="{% url 'post_delete' post.pk %}">Delete Blog Post</a></p>
-
+   <div class="edit">
+    <a href="{% url 'post_edit' post.pk %}">Edit Your Post</a>
+    <p><a href="{% url 'post_delete' post.pk %}">Delete Your Entry</a></p>
+   </div>>
 {% endblock content %}
