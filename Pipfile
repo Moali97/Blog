@@ -7,6 +7,7 @@ name = "pypi"
 django = "*"
 whitenoise = "*"
 django-multiselectfield = "*"
+gunicorn = "*"
 
 [dev-packages]
 
