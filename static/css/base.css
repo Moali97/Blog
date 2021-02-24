@@ -1,5 +1,5 @@
 header{
- background: #000000;
+ background: #A9A9A9;
  height:95px;
 }
 
@@ -15,9 +15,9 @@ body{
 }
 
 /* Blog description */
-.post-title, h4, h3 a{
+.post-title, h3 a{
  color: #000000;
- background:#FFE4C4;
+ background:#F0FFFF;
  font-size: 22px;
 }
 
@@ -33,16 +33,18 @@ body{
  color: #000000;
  background: #FFFFFF;
  height: 200px;
- background:#FFE4C4;
-
+ background:#F0FFFF;
+ overflow: auto;
 }
+
 .post-body p{
  font-size: 19px;
  font-color: #000000;
- background:#FFE4C4;
+ background:#F0FFFF;
 }
+
 .post-entry{
- text-align: center
+ text-align: center;
 }
 edit{
 
@@ -69,4 +71,7 @@ edit{
  margin:5px auto;
 }
 
+.post-new-title{
+
+}
 
