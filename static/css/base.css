@@ -46,9 +46,26 @@ body{
 .post-entry{
  text-align: center;
 }
-edit{
 
+.edit {
+ text-align: center;
+ margin: 0;
+ padding: 0;
 }
+
+.edit li{
+  background: #228B22;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin:5px;
+}
+
+.edit a {
+ color:#FFFFF0;
+}
+
 
 
 /* sign-up/login Navigation */
@@ -72,6 +89,5 @@ edit{
 }
 
 .post-new-title{
-
 }
 
