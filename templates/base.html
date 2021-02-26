@@ -29,8 +29,9 @@
 
 <div>
      {% if user.is_authenticated %}
-
+       <div class="logout">
          <p><a href="{% url 'logout' %}">Log out</a></p>
+       </div>
      {% else %}
          <p class="info">You are not Logged in!.</p>
          <p class="info">Please Log in or Signup!</p>

@@ -20,6 +20,9 @@ body{
  background:#F0FFFF;
  font-size: 22px;
 }
+.post-title{
+ text-align: center;
+}
 
 .blog-body{
  width: 800px;
@@ -34,7 +37,7 @@ body{
  background: #FFFFFF;
  height: 200px;
  background:#F0FFFF;
- overflow: auto;
+ overflow: hidden;
 }
 
 .post-body p{
@@ -66,11 +69,14 @@ body{
  color:#FFFFF0;
 }
 
-
+/* Post-detail */
+.post-new-title{
+  text-align: center;
+}
 
 /* sign-up/login Navigation */
 .nav-right a{
- background: #B22222;
+ background: #778899;
  color:#F5FFFA;
  text-decoration: none;
  float: right;
@@ -81,6 +87,24 @@ body{
  margin:5px;
 }
 
+/*Logout Button */
+.logout {
+ width: 60px;
+ height: 40px;
+ background: #FF0000;
+ color:#FFFFFF;
+ text-decoration: none;
+ padding: -10px;
+ border-radius: -25px;
+ display: inline-block;
+ margin: 10px;
+}
+
+.logout a {
+ color:#FFFFF0;
+}
+
+
 /*authentication info */
 .info{
  color: #DC143C;
@@ -88,6 +112,5 @@ body{
  margin:5px auto;
 }
 
-.post-new-title{
-}
+
 
