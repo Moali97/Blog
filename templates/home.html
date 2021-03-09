@@ -3,22 +3,19 @@
 {% block content %}
 {% for post in object_list %}
 
- <body>
- <div class="blog-body">
+     <body>
+          <div class="blog-body">
+          <div class="post-title">
+          <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}<br> {{ post.genre}}</a></h3>
+     </div>
 
- <div class="post-title">
-    <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}<br> {{ post.genre}}</a></h3>
- </div>
-
- <div class="post-body ">
-    {{post.first_name }}
-    {{post.last_name}}
-    <br>{{ post.post_date}}
-    <p>{{ post.body }}</p>
- </div>
- </div>
+     <div class="post-body ">
+           {{post.first_name }}
+           {{post.last_name}}
+          <br>{{ post.post_date}}
+         <p>{{ post.body }}</p>
+     </div>
+    </div>
 
    {% endfor %}
-
-
 {% endblock content %}
