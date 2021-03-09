@@ -1,20 +1,19 @@
 {% load static %}
 
  <link href="{% static 'css/base.css' %}" rel="stylesheet">
-
    <body
         style="background-color: #F0FFFF;">
    </body>
 
-<html>
-  <header>
-    <form ALIGN='center'>
-      <a class="blog-title"
-         href="{% url 'home' %}">
-         <font size = "9">Blog</font><br />
-      </a>
-    </form>
-  </header>
+    <html>
+      <header>
+        <form ALIGN='center'>
+          <a class="blog-title"
+             href="{% url 'home' %}">
+             <font size = "9">Blog</font><br />
+          </a>
+        </form>
+      </header>
 
 
    <div class="nav-right">
@@ -27,19 +26,16 @@
       </ul>
    </div>
 
-<div>
-     {% if user.is_authenticated %}
-       <div class="logout">
-         <p><a href="{% url 'logout' %}">Log out</a></p>
-       </div>
-     {% else %}
-         <p class="info">You are not Logged in!.</p>
-         <p class="info">Please Log in or Signup!</p>
+    <div>
+         {% if user.is_authenticated %}
+           <div class="logout">
+              <p><a href="{% url 'logout' %}">Log out</a></p>
+           </div>
+         {% else %}
+             <p class="info">You are not Logged in!.</p>
+             <p class="info">Please Log in or Signup!</p>
          {% endif %}
-</div>
-
-
-
+    </div>
     {% block content %}
     {% endblock content %}
 
