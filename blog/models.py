@@ -6,13 +6,7 @@ from django.forms import Textarea
 
 
 class Post(models.Model):
-    SUBJECT_CHOICES = (
-        ('tech', 'Technology'),
-        ('finance', 'Financial'),
-        ('cons', 'Consumer'),
-        ('cyber', 'Cybersecurity'),
-    )
-    genre = MultiSelectField(choices=SUBJECT_CHOICES, default='DEFAULT VALUE')
+    genre = models.CharField(max_length=50)
     title = models.CharField(max_length=50)
     first_name = models.CharField(max_length=30, default='')
     last_name = models.CharField(max_length=30, default='')
