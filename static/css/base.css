@@ -15,7 +15,9 @@ body{
 }
 
 .blog-genre{
+ height: 5%;
  color: #0000FF
+
 }
 
 /* Blog description */
@@ -24,6 +26,7 @@ body{
  background:#F0FFFF;
  font-size: 22px;
 }
+
 .post-title{
  text-align: center;
 }
