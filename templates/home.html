@@ -10,13 +10,13 @@
           <div class="blog-genre"> {{ post.genre}}</div>
 
 
-     <div class="post-body ">
-           {{post.first_name }}
-           {{post.last_name}}
-          <br>{{ post.post_date}}
-         <p>{{ post.body }}</p>
-     </div>
-    </div>
-
+           <div class="post-body ">
+               <p>By&nbsp;{{post.first_name }}
+                    {{post.last_name}}
+               on&nbsp;{{ post.post_date}}</p>
+               <p>{{ post.body }}</p>
+           </div>
+           </div>
+     </body>
    {% endfor %}
-{% endblock content %}
+   {% endblock content %}
