@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
+    {% extends 'base.html' %}
 
-{% block content %}
-{% for post in object_list %}
+    {% block content %}
+    {% for post in object_list %}
 
      <body>
           <div class="blog-body">
@@ -10,11 +10,11 @@
           <div class="blog-genre"> {{ post.genre}}</div>
 
 
-           <div class="post-body ">
+           <div class="post-body">
                <p>By&nbsp;{{post.first_name }}
-                    {{post.last_name}}
-               on&nbsp;{{ post.post_date}}</p>
-               <p>{{ post.body }}</p>
+                          {{post.last_name}}
+                  on&nbsp;{{ post.post_date}}</p>
+                       <p>{{ post.body }}</p>
            </div>
            </div>
      </body>
