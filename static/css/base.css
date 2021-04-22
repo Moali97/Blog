@@ -19,10 +19,10 @@ body{
  color: #0000FF
 }
 
-/* Blog description */
+/* Blog description*/
 .post-title, h3 a{
  color: #000000;
- background:#F0FFFF;
+ text-decoration: none;
  font-size: 22px;
 }
 
@@ -33,23 +33,21 @@ body{
 .blog-body{
  width: 800px;
  margin: 0 auto;
- border-style: ridge; border-width: 5px; border-color: white;
+ /*border-style: ridge; border-width: 5px; border-color: white;*/
 }
 
 
-/* Blog contents */
+/* Blog contents*/
 .post-body{
  color: #000000;
- background: #FFFFFF;
  height: 200px;
- background:#F0FFFF;
  overflow: hidden;
 }
 
 .post-body p{
  font-size: 19px;
  font-color: #000000;
- background:#F0FFFF;
+
 }
 
 .post-entry{
