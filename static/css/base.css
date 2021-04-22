@@ -97,17 +97,8 @@ body{
 .logout {
  width: 60px;
  height: 40px;
- background: #FF0000;
- color:#FFFFFF;
- text-decoration: none;
- padding: -10px;
- border-radius: 25px;
  display: inline-block;
  margin: 0px;
-}
-
-.logout a {
- color:#FFFFF0;
 }
 
 /*authentication info */
