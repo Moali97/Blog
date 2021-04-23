@@ -71,6 +71,9 @@ body{
 .edit a {
  color:#FFFFF0;
 }
+.edit-boxes {
+ text-align: center;
+}
 
 /* Post-detail */
 .post-new-title{
