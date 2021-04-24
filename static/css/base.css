@@ -50,7 +50,9 @@ body{
 }
 
 .post-entry{
- text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 100px;
 }
 
 .edit {
