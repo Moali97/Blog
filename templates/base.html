@@ -16,32 +16,32 @@
         </form>
       </header>
 
-
-   <div class="nav-right">
-      <ul>
-       <nav>
-      {% if user.is_authenticated %}
-        <a href="{% url 'post_new' %}">Post New Blog</a>
-      {% endif %}
-      {% if not user.is_authenticated %}
-        <a href="{% url 'login' %}">Log In</a>
-        <a href="{% url 'signup' %}">Sign-up</a>
-      {% endif %}
-       </nav>
-      </ul>
-   </div>
+       <div class="nav-right">
+          <ul>
+          <a class="nav-link" href="https://github.com/Moali97/Blog" target="_blank">GitHub</a>
+           <nav>
+             {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}">Post New Blog</a>
+                {% endif %}
+             {% if not user.is_authenticated %}
+                <a href="{% url 'login' %}">Log In</a>
+                <a href="{% url 'signup' %}">Sign-up</a>
+             {% endif %}
+           </nav>
+          </ul>
+       </div>
 
     <div>
          {% if user.is_authenticated %}
            <div class="logout">
              <a href="{% url 'logout' %}" button type="button" class="btn btn-danger">Logout</button></a>
-
            </div>
          {% else %}
              <p class="info">You are not Logged in!.</p>
              <p class="info">Please Log in or Signup!</p>
          {% endif %}
     </div>
+
     {% block content %}
     {% endblock content %}
 
