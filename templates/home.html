@@ -4,7 +4,6 @@
     {% for post in object_list %}
 
      <body>
-
           <div class="blog-body">
           <div class="post-title">
           <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h3></div>
@@ -13,10 +12,10 @@
 
            <div class="post-body">
                <p>By&nbsp;{{post.first_name }}
-                          {{post.last_name}}
+                     {{post.last_name}}
                   on&nbsp;{{ post.post_date}}</p>
-                       <p>{{ post.body }}</p>
-           </div>
+                  <p>{{ post.body }}</p>
+            </div>
            </div>
          <hr>
      </body>
